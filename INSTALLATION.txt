@@ -1,0 +1,22 @@
+Installed and approved in OmniWM 0.8.0, Default style.
+
+Tunnel: Myworkout Wireguard Client
+Service UUID: BC61A04B-C99B-4C3D-8892-3FA1EBAC9973
+Installed widget: ~/.config/omniwm/shell/widgets/wireguard/
+Configuration: ~/.config/omniwm/shell/shell.toml
+Original backup: ~/.config/omniwm/shell/backups/wireguard-20261112-000259-867274/shell.toml
+
+Click VPN ON / VPN OFF to toggle. Right-click for the menu.
+
+Validation:
+- 13 offline provider and configuration tests passed.
+- All three Luau sources compiled using the official Luau compiler.
+- Perl syntax check passed.
+- OmniWM logged "Loaded widget wireguard" with no subsequent load/render errors.
+- OmniWM program trust was approved by the user and its provider process was observed running.
+- A live test of the installed provider connected and disconnected the exact selected service.
+- Final state: disconnected (restored to its initial state).
+- Native pointer interaction was not exercised; accessibility inspection timed out.
+
+Run offline checks: python3 -m unittest discover -s tests -v
+See README.md for setup, troubleshooting, removal, and source attribution.

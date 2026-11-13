@@ -1,0 +1,21 @@
+title = "WireGuard"
+icon = "lock.shield"
+views = ["bar", "panel"]
+capabilities = { provider = true }
+
+[provider]
+command = ["provider.pl"]
+
+[options.tunnel]
+type = "string"
+title = "WireGuard tunnel name or service UUID"
+default = "Myworkout Wireguard Client"
+maxLength = 256
+
+[options.pollSeconds]
+type = "number"
+title = "Status refresh interval (seconds)"
+default = 3
+min = 1
+max = 60
+step = 1

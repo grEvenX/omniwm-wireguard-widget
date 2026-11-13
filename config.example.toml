@@ -1,0 +1,14 @@
+# Merge into ~/.config/omniwm/shell/shell.toml; preserve your other widgets.
+# Do not add duplicate [profiles.default] or [profiles.default.island] headers.
+[profiles.default]
+trailing = ["scratchpads", "wireguard", "wifi", "battery-details", "control-center", "system-stats", "clock", "privacy"]
+
+[profiles.default.island]
+root = "wireguard"
+
+[[profiles.default.island.components]]
+id = "wireguard-vpn"
+widget = "wireguard"
+enabled = true
+tunnel = "Myworkout Wireguard Client" # A scutil service UUID is preferred.
+pollSeconds = 3
